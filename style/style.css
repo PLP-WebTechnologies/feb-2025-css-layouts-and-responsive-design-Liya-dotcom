@@ -1,0 +1,102 @@
+/* Reset default styles and set box-sizing */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Define reusable color variables */
+:root{
+    --color-primary: #191d2b; /* Dark background */
+    --color-secondary: #50b2be; /* Accent color */
+    --color-white: #fff; /* White text */
+    --color-black: #000;    
+    --color-gray: #808080;
+    --color-light-gray: #d3d3d3;    
+}
+
+/* Body styling for dark theme */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    margin-top: 60px; /* Adjust this value to match the height of your nav */
+}
+
+/* Anchor tag styles */
+a{
+    text-decoration: none;
+    color: var(--color-white);
+}
+a:hover{
+    color: var(--color-secondary);
+}
+
+/* Header styling */
+header{
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 2em;
+}
+
+/* Navigation bar styles */
+nav{
+    font-size: 1.2em;
+    background-color: var(--color-secondary);
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensure it stays on top */
+}
+
+/* Navbar container */
+.navbar{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-around;
+    grid-gap: 1.5px;
+    font-size: 1rem;
+}
+
+/* Navbar links */
+.navbar a{
+    padding: 10px 20px;
+    color: var(--color-white);
+    font-weight: bold;
+}
+.navbar a:hover{
+    background-color: var(--color-white);
+    color: var(--color-primary);
+    border-radius: 5px;
+}
+
+/* Section container */
+section{
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+/* Flexbox layout */
+.flexbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px; /* Adds spacing between flex items */
+    /* align-items: center; Uncomment if needed */
+}
+
+/* Grid layout */
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Defines 2 equal columns */
+    grid-gap: 10px; /* Adds spacing */
+}
+
+/* End of CSS file */
+
+
+

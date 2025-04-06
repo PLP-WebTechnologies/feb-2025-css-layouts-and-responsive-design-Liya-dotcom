@@ -95,7 +95,29 @@ section{
     grid-template-columns: 1fr 1fr; /* Defines 2 equal columns */
     grid-gap: 10px; /* Adds spacing */
 }
-
+/* Footer styling */
+footer{
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+/* Footer links */
+footer a{
+    color: var(--color-white);
+    padding: 10px;
+    font-weight: bold;
+}
+footer a:hover{
+    background-color: var(--color-white);
+    color: var(--color-primary);
+    border-radius: 5px;
+}
+    
+@import './_media.css'; /* Import media queries for responsive design */
 /* End of CSS file */
 
 
